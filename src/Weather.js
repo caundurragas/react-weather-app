@@ -17,7 +17,7 @@ export default function Weather(props) {
     <div className="titt">
       <Loader
         type="Puff"
-        color="#00BFFF"
+        color="blue"
         height={100}
         width={100}
         timeout={3000} //3 secs
