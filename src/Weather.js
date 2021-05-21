@@ -1,28 +1,46 @@
 import React from "react";
 import axios from "axios";
-import Loader from "react-loader-spinner";
 
-export default function Weather(props) {
-  function showTemperature(response) {
-    alert(
-      `The weather in ${response.data.name} is ${Math.round(
-        response.data.main.temp
-      )}`
-    );
-  }
-
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&units=metric&appid=3ec7bf82a84873e82215df15af12d134`;
-  axios.get(url).then(showTemperature);
+export default function Weather() {
   return (
-    <div className="titt">
-      <Loader
-        type="Puff"
-        color="blue"
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
-      />
-      <h2>Hello!!</h2>
+    <div className="row">
+      <div className="col-6">
+        <h1 id="city">London</h1>
+        <ul id="timeDescription">
+          <li id="currentTime">Friday 5th of April, 2021</li>
+
+          <li id="description">Sunny</li>
+        </ul>
+      </div>
+
+      <div className="col-6">
+        <div className="clearfix weatherTemperature">
+          <img
+            src="https://cdn.icon-icons.com/icons2/1621/PNG/512/3741356-sun-sunny-weather_108871.png"
+            width="32"
+            alt="Partly cloudy"
+            id="iconWeather"
+            className="float-left weatherForecastIcon"
+          />
+          <div className="float-left currentWeather">
+            <span id="currentTemperature"> 13</span>
+
+            <span className="metrics">ºC</span>
+          </div>
+        </div>
+
+        <ul id="temperatureInfo">
+          <li id="wind">
+            Wind <span id="windInfo">23</span>mp
+          </li>
+          <li id="hum">
+            Humidity <span id="humidity">23</span>%
+          </li>
+          <li id="feelsLike">
+            Feels Like <span id="realFeel">23</span>ºC
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

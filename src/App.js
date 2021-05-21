@@ -1,21 +1,20 @@
-import "./App.css";
+import React from "react";
 import Weather from "./Weather";
+import WeeklyForecast from "./WeeklyForecast";
+import SearchEngineer from "./SearchEngineer";
+import "./index.css";
+import "./SearchForm.css";
+import "./Weather.css";
+import "./WeeklyForecast.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hellow WOrld</h1>
-        <Weather city="Punta Cana" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container">
+      <div class="weatherApp">
+        <SearchEngineer />
+        <Weather />
+        <WeeklyForecast />
+      </div>
     </div>
   );
 }
