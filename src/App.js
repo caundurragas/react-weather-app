@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Weather from "./Weather";
 import WeeklyForecast from "./WeeklyForecast";
@@ -8,8 +9,8 @@ import "./Weather.css";
 
 function App() {
   return (
-    <div class="container">
-      <div class="weatherApp">
+    <div className="container">
+      <div className="weatherApp">
         <SearchEngineer />
         <Weather />
         <WeeklyForecast />
