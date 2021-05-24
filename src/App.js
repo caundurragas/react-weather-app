@@ -13,8 +13,9 @@ function App() {
         <SearchEngineer />
         <Weather />
         <WeeklyForecast />
-        <a href="https://github.com/caundurragas/react-weather-app" />
-        Open-source
+        <a href="https://github.com/caundurragas/react-weather-app">
+          Open-source
+        </a>
       </div>
     </div>
   );
