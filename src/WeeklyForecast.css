@@ -1,0 +1,30 @@
+.forecastContainer {
+  margin-top: 9px;
+  margin-bottom: 15px;
+}
+.weatherForecastIcon {
+  width: 50px;
+}
+.day {
+  color: #fff;
+  font-size: 16px;
+}
+.weatherForecastIcon {
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.weatherForecastMinTemperature .weatherForecastMaxTemperature {
+  font-size: 13px;
+}
+.weatherForecastMaxTemperature {
+  color: #fff;
+  margin-top: 10px;
+}
+.weatherForecastMinTemperature {
+  color: #ddd7d7;
+}
+h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
