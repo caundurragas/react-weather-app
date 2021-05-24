@@ -10,10 +10,11 @@ function App() {
   return (
     <div class="container">
       <div class="weatherApp">
-        <p> Hola hola</p>
         <SearchEngineer />
         <Weather />
         <WeeklyForecast />
+        <a href="https://github.com/caundurragas/react-weather-app" />
+        Open-source
       </div>
     </div>
   );
