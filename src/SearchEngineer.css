@@ -1,8 +1,21 @@
-.searchCity {
+form {
+}
+.searchBar {
   display: inline;
-  width: auto;
   padding-right: 5px;
   padding-left: 45px;
+  width: 70%;
+  border-width: 0;
+  border-radius: 5px 0 0 5px;
+}
+.searchBar input {
+  width: 100%;
+}
+.searchButton {
+  border-radius: 0 5px 5px 0;
+  border-width: 0;
+  border-style: solid;
+  width: auto;
 }
 
 .submmitButton {

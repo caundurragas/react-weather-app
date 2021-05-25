@@ -15,7 +15,7 @@ export default function Weather() {
       <div className="col-6">
         <div className="clearfix weatherTemperature">
           <img
-            src="https://cdn.icon-icons.com/icons2/1621/PNG/512/3741356-sun-sunny-weather_108871.png"
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             width="32"
             alt="Partly cloudy"
             id="iconWeather"

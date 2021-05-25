@@ -35,11 +35,13 @@ export default function SearchEngineer() {
   let form = (
     <form onSubmit={handleSubmit}>
       <input
+        className="searchBar"
         type="search"
         placeholder="Search for a city..."
         onChange={getCity}
       />
-      <input type="submit" value="search" />
+
+      <input className="searchButton" type="submit" value="search" />
     </form>
   );
 
