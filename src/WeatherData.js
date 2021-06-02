@@ -1,12 +1,12 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 
-export default function WeatherDate(props) {
+export default function WeatherData(props) {
   return (
     <div className="weatherInfo">
       <div className="row">
         <div className="col-6">
-          <h1 id="city">London</h1>
+          <h1 id="city">{props.data.City}</h1>
           <ul id="timeDescription">
             <li id="currentTime">
               <FormattedDate date={props.data.date} />

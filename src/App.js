@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="container">
       <div className="weatherApp">
-        <Weather />
+        <Weather defaultCity="London" />
         <WeeklyForecast />
       </div>
       <a href="https://github.com/caundurragas/react-weather-app">
