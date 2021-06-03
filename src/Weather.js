@@ -18,7 +18,7 @@ export default function Weather(props) {
       Feelslike: response.data.main.feels_like,
       date: new Date(response.data.dt * 1000),
       City: response.data.name,
-      Icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      Icon: response.data.weather[0].icon,
     });
   }
   function search() {
