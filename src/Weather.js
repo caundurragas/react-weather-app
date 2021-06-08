@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherData from "./WeatherData";
+import WeeklyForecast from "./WeeklyForecast";
 
 export default function Weather(props) {
   const [temperatureData, setTemperatureData] = useState({ loaded: false });
   const [city, setCity] = useState(props.defaultCity);
 
   function getWeatherInfo(response) {
-    console.log(response.data);
     setTemperatureData({
       loaded: true,
-
+      coordinates: response.data.coord,
       Temperature: response.data.main.temp,
       Description: response.data.weather[0].description,
       Humidity: response.data.main.humidity,
@@ -40,7 +40,6 @@ export default function Weather(props) {
         className="searchBar"
         type="search"
         placeholder="Search for a city..."
-        autofocus="on"
         onChange={getCity}
       />
       <input className="searchButton" type="submit" value="search" />
@@ -52,6 +51,7 @@ export default function Weather(props) {
       <div>
         {form}
         <WeatherData data={temperatureData} cityInfo={city} />
+        <WeeklyForecast coordinates={temperatureData.coordinates} />
       </div>
     );
   } else {
