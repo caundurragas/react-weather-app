@@ -10,11 +10,7 @@ h1 {
   color: #fff;
   font-size: 50px;
 }
-.weatherTemperature canvas {
-  height: 64px;
-  width: 64px;
-  color: #fff;
-}
+
 .weatherForecastIcon {
   width: 30px;
   margin-top: 15px;
