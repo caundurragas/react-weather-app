@@ -9,11 +9,6 @@
   color: #fff;
   font-size: 16px;
 }
-.weatherForecast canvas {
-  width: 30px;
-
-  margin: 5px 0 -5px 15px;
-}
 
 .weatherForecastMinTemperature .weatherForecastMaxTemperature {
   font-size: 13px;
