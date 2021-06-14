@@ -11,10 +11,16 @@ h1 {
   font-size: 50px;
 }
 
-.weatherForecastIcon {
-  width: 30px;
-  margin-top: 15px;
+.weatherTemperature {
+  display: grid;
+  grid-template-columns: 75px auto;
 }
+.weatherForecastIcon {
+  width: auto;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
 .currentWeather {
   display: inline;
   font-size: 64px;

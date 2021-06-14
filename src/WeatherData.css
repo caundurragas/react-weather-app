@@ -1,1 +1,7 @@
-
+.weatherTemperature {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.weatherForecastIcon {
+  width: auto;
+}
